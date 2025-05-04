@@ -93,3 +93,13 @@ questions = {
         }
     }
 }
+id = [i for i in range(1,len(questions)+1)]
+key = [i for i in questions.keys()]
+text = []
+the_tuple = []
+for i,j in questions.items():
+    for j1,_ in j.items():
+        text.append(j1)
+for i in range(len(id)):
+    the_tuple.append((id[i],key[i],text[i]))
+print(the_tuple)
