@@ -1,9 +1,10 @@
-roles = [
-    "Frontend Developer","Backend Developer","Full-Stack Developer",
-    "Mobile App Developer","DevOps Engineer","Data Analyst",
-    "Data Scientist","Machine Learning Engineer","Cybersecurity Specialist",
-    "Cloud Engineer","UI/UX Designer","Product Manager",
-    "Project Manager"
-]
+import sqlite3
+connection = sqlite3.connect("quizinfo.db")
+cursor = connection.cursor()
+cursor.execute("SELECT name FROM roles")
+role_tuple = cursor.fetchall()
+roles = [i[0] for i in role_tuple]
+connection.commit()
+connection.close()
 if __name__ == "__main__":
     print(len(roles))

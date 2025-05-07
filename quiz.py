@@ -30,6 +30,7 @@ for i,j in total_score.items():
         highest=j
         result=i
 #Print out quiz result
+print("\n")
 for i,j in total_score.items():
     print(i," ",j)
 print("\nQuiz result: ",result)
