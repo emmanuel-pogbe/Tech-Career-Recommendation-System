@@ -1,5 +1,4 @@
 import sqlite3
-import modules.questions as questions
 connection = sqlite3.connect("quizinfo.db")
 cursor = connection.cursor()
 # questions = [(1, 'Q1', 'Which skill do you think is your strongest?'),
