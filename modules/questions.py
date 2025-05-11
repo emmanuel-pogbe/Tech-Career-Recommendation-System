@@ -102,3 +102,11 @@ questions = {
 #         text.append(j1)
 # for i in range(len(id)):
 #     the_tuple.append((id[i],key[i],text[i]))
+# questions__ = []
+# for i,j in questions.items():
+#         question_id = int(i[1:])
+#         for j1,j2 in j.items():
+#             for j3,j4 in j2.items():
+#                 option_key = j3
+#                 text = j4
+#                 questions__.append((question_id,option_key,text))
