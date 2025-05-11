@@ -1,5 +1,3 @@
-import modules.roles as Roles
-roles = Roles.roles
 scores = {
     "Q1": { 
         "a": {  # Problem-solving / analytical thinking
